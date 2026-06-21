@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Bibliography | Aryan Gupta</title>
+    <style>
+        /* CSS Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            /* Faded Background Implementation */
+            background-image: url('https://gosharpener.com/content/uploads/photos/2025/05/sngine_6350f256442bf30793f664e0a2ac9326.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: rgba(255, 255, 255, 0.88); /* White overlay to fade the background */
+            background-blend-mode: overlay;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 50px;
+            border-top: 5px solid #2e7d32;
+        }
+
+        h1 {
+            color: #1b5e20;
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .details {
+            font-weight: bold;
+            color: #2e7d32;
+            font-size: 1.1em;
+            margin-top: 15px;
+        }
+
+        h2 {
+            color: #1b5e20;
+            border-bottom: 2px solid #4caf50;
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+        }
+
+        /* Grid Layouts for Cards */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        /* Image Sources Section */
+        .img-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* PDF Section */
+        .pdf-card iframe {
+            width: 100%;
+            height: 550px; /* Made the PDF preview longer */
+            border: none;
+            border-bottom: 1px solid #eee;
+            background-color: #f5f5f5;
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #2e7d32;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.2s;
+            font-size: 0.95em;
+        }
+
+        .btn:hover {
+            background-color: #1b5e20;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>E-Bibliography</h1>
+            <div class="subtitle">Sustainable Development: Impact of Pollution on Local Environment</div>
+            <div class="subtitle">A Case Study of Gorakhpur</div>
+            <div class="details">
+                Submitted by: Aryan • Class 10th Hybrid • Session 2026-27
+            </div>
+        </header>
+
+        <!-- Image Sources Section -->
+        <h2>Photographic & Reference Visuals</h2>
+        <div class="grid">
+            <!-- Image 1 -->
+            <div class="card img-card">
+                <img src="https://staticimg.amarujala.com/assets/images/2020/03/18/ramgarh-taal_1584508906.jpeg?w=674&dpr=1.0&q=80" alt="Ramgarh Tal View">
+                <div class="card-content">
+                    <div class="card-title">Ramgarh Tal View</div>
+                    <a href="https://staticimg.amarujala.com/assets/images/2020/03/18/ramgarh-taal_1584508906.jpeg?w=674&dpr=1.0&q=80" target="_blank" class="btn">View Source Image</a>
+                </div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="card img-card">
+                <img src="https://www.livehindustan.com/lh-img/smart/img/2026/03/15/1200x900/B085329_1773545092690.JPG" alt="Polluted Ramgarh Tal">
+                <div class="card-content">
+                    <div class="card-title">Pollution in Ramgarh Tal</div>
+                    <a href="https://www.livehindustan.com/lh-img/smart/img/2026/03/15/1200x900/B085329_1773545092690.JPG" target="_blank" class="btn">View Source Image</a>
+                </div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="card img-card">
+                <img src="https://imagesvs.oneindia.com/webp/hi/img/2023/11/newproject-2023-11-07t143237-016-1699347847.jpg" alt="Air Pollution in Gorakhpur">
+                <div class="card-content">
+                    <div class="card-title">Air Pollution & Smoke on Gorakhpur Road</div>
+                    <a href="https://imagesvs.oneindia.com/webp/hi/img/2023/11/newproject-2023-11-07t143237-016-1699347847.jpg" target="_blank" class="btn">View Source Image</a>
+                </div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="card img-card">
+                <img src="https://d14a823tufvajd.cloudfront.net/images/XRrd40WXtzzWgRi8DZlV.jpg" alt="Solar Panel on Rooftop">
+                <div class="card-content">
+                    <div class="card-title">Solar Panel on Rooftop</div>
+                    <a href="https://d14a823tufvajd.cloudfront.net/images/XRrd40WXtzzWgRi8DZlV.jpg" target="_blank" class="btn">View Source Image</a>
+                </div>
+            </div>
+
+            <!-- Image 5 -->
+            <div class="card img-card">
+                <img src="https://content.jdmagicbox.com/comp/nagpur/l7/0712px712.x712.231215160446.y8l7/catalogue/shreeram-private-limited-nagpur-road-side-plantation-exporters-a2wvcsz14q.jpg" alt="Roadside Plantation">
+                <div class="card-content">
+                    <div class="card-title">Roadside Plantation</div>
+                    <a href="https://content.jdmagicbox.com/comp/nagpur/l7/0712px712.x712.231215160446.y8l7/catalogue/shreeram-private-limited-nagpur-road-side-plantation-exporters-a2wvcsz14q.jpg" target="_blank" class="btn">View Source Image</a>
+                </div>
+            </div>
+
+            <!-- Image 6 -->
+            <div class="card img-card">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/6b/f9/c3/central-fountain-of-the.jpg?w=1000&h=-1&s=1" alt="Vindhyavasini Park Gorakhpur">
+                <div class="card-content">
+                    <div class="card-title">Vindhyavasini Park, Gorakhpur</div>
+                    <a href="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/6b/f9/c3/central-fountain-of-the.jpg?w=1000&h=-1&s=1" target="_blank" class="btn">View Source Image</a>
+                </div>
+            </div>
+
+            <!-- Image 7 (Background Image Theme) -->
+            <div class="card img-card">
+                <img src="https://gosharpener.com/content/uploads/photos/2025/05/sngine_6350f256442bf30793f664e0a2ac9326.png" alt="Save Earth Background Theme">
+                <div class="card-content">
+                    <div class="card-title">Background Theme</div>
+                    <a href="https://gosharpener.com/content/uploads/photos/2025/05/sngine_6350f256442bf30793f664e0a2ac9326.png" target="_blank" class="btn">View Source Image</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Document Previews Section (Generated Dynamically via JS to ensure perfect URL encoding) -->
+        <h2>Project Files Repository</h2>
+        <div class="grid" id="pdf-grid">
+            <!-- PDF Cards will be injected here by JavaScript -->
+        </div>
+
+        <footer>
+            E-Bibliography created for CBSE Social Science Project File • 2026
+        </footer>
+    </div>
+
+    <!-- JavaScript to load PDFs into Mozilla PDF.js iframes -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // List of your files from the GitHub folder
+            const pdfFiles = [
+                "1.pdf", "2.pdf", "3.pdf", "4.pdf", "5.pdf", "5-backside.pdf", 
+                "6.pdf", "6-backside.pdf", "7.pdf", "8.pdf", "9.pdf", "10.pdf"
+            ];
+            
+            // Raw GitHub content base URL
+            const rawBaseUrl = "https://raw.githubusercontent.com/AryansDevStudios/raw-files/main/SST%20project%202026-27/";
+            
+            const pdfGrid = document.getElementById('pdf-grid');
+
+            pdfFiles.forEach(fileName => {
+                // Construct the direct link to the raw PDF
+                const directFileUrl = rawBaseUrl + fileName;
+                
+                // Encode the URL so Mozilla's PDF.js viewer can read it without throwing a formatting error
+                const encodedFileUrl = encodeURIComponent(directFileUrl);
+                const viewerUrl = "https://mozilla.github.io/pdf.js/web/viewer.html?file=" + encodedFileUrl;
+
+                const cardHTML = `
+                    <div class="card pdf-card">
+                        <iframe src="${viewerUrl}" title="${fileName}"></iframe>
+                        <div class="card-content">
+                            <div class="card-title">Page / File: ${fileName}</div>
+                            <a href="${directFileUrl}" target="_blank" class="btn">Download</a>
+                        </div>
+                    </div>
+                `;
+                
+                // Insert into the grid
+                pdfGrid.innerHTML += cardHTML;
+            });
+        });
+    </script>
+</body>
+</html>
