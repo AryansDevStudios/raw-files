@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Bibliography | Aryan Gupta</title>
+    <title>E-Bibliography | Sustainable Development</title>
     <style>
         /* CSS Styling */
         body {
@@ -93,10 +93,74 @@
             border-bottom: 1px solid #eee;
         }
 
+        /* Written Bibliography Links Styling */
+        .links-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 25px 30px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+
+        .links-section h3 {
+            color: #2e7d32;
+            margin-top: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            font-size: 1.4em;
+        }
+
+        .links-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .links-section li {
+            margin-bottom: 6px;
+            font-size: 1.1em;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .links-section li::before {
+            content: "•";
+            color: #4caf50;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .links-section a {
+            color: #1b5e20;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .links-section a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contribution Descriptions Styling */
+        .contribution {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 4px;
+            margin-bottom: 18px;
+            padding-left: 20px;
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        .contribution strong {
+            color: #2e7d32;
+            font-weight: 600;
+        }
+
         /* PDF Section */
         .pdf-card iframe {
             width: 100%;
-            height: 550px; /* Made the PDF preview longer */
+            height: 550px; 
             border: none;
             border-bottom: 1px solid #eee;
             background-color: #f5f5f5;
@@ -152,19 +216,19 @@
             <div class="subtitle">Sustainable Development: Impact of Pollution on Local Environment</div>
             <div class="subtitle">A Case Study of Gorakhpur</div>
             <div class="details">
-                Submitted by: Aryan • Class 10th Hybrid • Session 2026-27
+                Submitted by: Aryan Gupta • Class 10th Hybrid • Session 2026-27
             </div>
         </header>
 
         <!-- Image Sources Section -->
-        <h2>Photographic & Reference Visuals</h2>
+        <h2>Photographic Reference</h2>
         <div class="grid">
             <!-- Image 1 -->
             <div class="card img-card">
                 <img src="https://staticimg.amarujala.com/assets/images/2020/03/18/ramgarh-taal_1584508906.jpeg?w=674&dpr=1.0&q=80" alt="Ramgarh Tal View">
                 <div class="card-content">
                     <div class="card-title">Ramgarh Tal View</div>
-                    <a href="https://staticimg.amarujala.com/assets/images/2020/03/18/ramgarh-taal_1584508906.jpeg?w=674&dpr=1.0&q=80" target="_blank" class="btn">View Source Image</a>
+                    <a href="https://www.amarujala.com" target="_blank" class="btn">amarujala.com</a>
                 </div>
             </div>
 
@@ -173,7 +237,7 @@
                 <img src="https://www.livehindustan.com/lh-img/smart/img/2026/03/15/1200x900/B085329_1773545092690.JPG" alt="Polluted Ramgarh Tal">
                 <div class="card-content">
                     <div class="card-title">Pollution in Ramgarh Tal</div>
-                    <a href="https://www.livehindustan.com/lh-img/smart/img/2026/03/15/1200x900/B085329_1773545092690.JPG" target="_blank" class="btn">View Source Image</a>
+                    <a href="https://www.livehindustan.com" target="_blank" class="btn">livehindustan.com</a>
                 </div>
             </div>
 
@@ -182,7 +246,7 @@
                 <img src="https://imagesvs.oneindia.com/webp/hi/img/2023/11/newproject-2023-11-07t143237-016-1699347847.jpg" alt="Air Pollution in Gorakhpur">
                 <div class="card-content">
                     <div class="card-title">Air Pollution & Smoke on Gorakhpur Road</div>
-                    <a href="https://imagesvs.oneindia.com/webp/hi/img/2023/11/newproject-2023-11-07t143237-016-1699347847.jpg" target="_blank" class="btn">View Source Image</a>
+                    <a href="https://www.oneindia.com" target="_blank" class="btn">oneindia.com</a>
                 </div>
             </div>
 
@@ -191,7 +255,7 @@
                 <img src="https://d14a823tufvajd.cloudfront.net/images/XRrd40WXtzzWgRi8DZlV.jpg" alt="Solar Panel on Rooftop">
                 <div class="card-content">
                     <div class="card-title">Solar Panel on Rooftop</div>
-                    <a href="https://d14a823tufvajd.cloudfront.net/images/XRrd40WXtzzWgRi8DZlV.jpg" target="_blank" class="btn">View Source Image</a>
+                    <a href="https://toppersnotes.co" target="_blank" class="btn">toppersnotes.co</a>
                 </div>
             </div>
 
@@ -200,7 +264,7 @@
                 <img src="https://content.jdmagicbox.com/comp/nagpur/l7/0712px712.x712.231215160446.y8l7/catalogue/shreeram-private-limited-nagpur-road-side-plantation-exporters-a2wvcsz14q.jpg" alt="Roadside Plantation">
                 <div class="card-content">
                     <div class="card-title">Roadside Plantation</div>
-                    <a href="https://content.jdmagicbox.com/comp/nagpur/l7/0712px712.x712.231215160446.y8l7/catalogue/shreeram-private-limited-nagpur-road-side-plantation-exporters-a2wvcsz14q.jpg" target="_blank" class="btn">View Source Image</a>
+                    <a href="https://www.jdmagicbox.com" target="_blank" class="btn">jdmagicbox.com</a>
                 </div>
             </div>
 
@@ -209,7 +273,7 @@
                 <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/6b/f9/c3/central-fountain-of-the.jpg?w=1000&h=-1&s=1" alt="Vindhyavasini Park Gorakhpur">
                 <div class="card-content">
                     <div class="card-title">Vindhyavasini Park, Gorakhpur</div>
-                    <a href="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/6b/f9/c3/central-fountain-of-the.jpg?w=1000&h=-1&s=1" target="_blank" class="btn">View Source Image</a>
+                    <a href="https://www.tripadvisor.com" target="_blank" class="btn">tripadvisor.com</a>
                 </div>
             </div>
 
@@ -217,56 +281,99 @@
             <div class="card img-card">
                 <img src="https://gosharpener.com/content/uploads/photos/2025/05/sngine_6350f256442bf30793f664e0a2ac9326.png" alt="Save Earth Background Theme">
                 <div class="card-content">
-                    <div class="card-title">Background Theme</div>
-                    <a href="https://gosharpener.com/content/uploads/photos/2025/05/sngine_6350f256442bf30793f664e0a2ac9326.png" target="_blank" class="btn">View Source Image</a>
+                    <div class="card-title">Background Theme Image</div>
+                    <a href="https://gosharpener.com" target="_blank" class="btn">gosharpener.com</a>
                 </div>
             </div>
         </div>
 
-        <!-- Document Previews Section (Generated Dynamically via JS to ensure perfect URL encoding) -->
-        <h2>Project Files Repository</h2>
+        <!-- Web Resources Section with Contributions -->
+        <h2>References & Web Sources</h2>
+        
+        <div class="links-section">
+            <h3>Cover Page and Designs</h3>
+            <ul>
+                <p style="font-weight: bold; color: #333; margin-bottom: 10px;">Made by myself using:</p>
+                <li><a href="https://figma.com" target="_blank">figma.com</a></li>
+                <div class="contribution"><strong>Contribution:</strong> Used as the primary design tool to create the visually appealing cover page, structure the layout, and format the typography of the physical project file.</div>
+                
+                <li><a href="https://gemini.google.com" target="_blank">gemini.google.com</a></li>
+                <div class="contribution"><strong>Contribution:</strong> Used to generate the background designs.</div>
+            </ul>
+        </div>
+
+        <div class="links-section">
+            <h3>Official Government Websites</h3>
+            <ul>
+                <li>Uttar Pradesh Pollution Control Board (CPCB): <a href="https://uppcb.up.gov.in/en" target="_blank">uppcb.up.gov.in/en</a></li>
+                <div class="contribution"><strong>Contribution:</strong> Provided data regarding water pollution levels in the Rapti River, and local environmental regulations.</div>
+                
+                <li>Ministry of New and Renewable Energy (MNRE): <a href="https://mnre.gov.in/en" target="_blank">mnre.gov.in/en</a></li>
+                <div class="contribution"><strong>Contribution:</strong> Supplied information on national renewable energy policies and subsidies (like the PM Surya Ghar scheme) to support the feasibility study of solar power in Gorakhpur.</div>
+            </ul>
+        </div>
+
+        <div class="links-section">
+            <h3>Other Websites Used</h3>
+            <ul>
+                <li><a href="https://google.com" target="_blank">google.com</a></li>
+                <div class="contribution"><strong>Contribution:</strong> Acted as the primary search engine to gather local news reports, reference materials, and high-quality images to visually support the project.</div>
+
+                <li><a href="https://wikipedia.com" target="_blank">wikipedia.com</a></li>
+                <div class="contribution"><strong>Contribution:</strong> Consulted to gather foundational knowledge, geographical data, and the historical context of Gorakhpur's urbanization and natural resources.</div>
+
+                <li><a href="https://github.com" target="_blank">github.com</a></li>
+                <div class="contribution"><strong>Contribution:</strong> Utilized as the hosting platform and file repository to securely store the project PDFs and host this live, scannable E-Bibliography online.</div>
+
+                <li><a href="https://maps.google.com" target="_blank">maps.google.com</a></li>
+                <div class="contribution"><strong>Contribution:</strong> Used to visually analyze the geographical spread of Ramgarh Tal, the path of the Rapti River.</div>
+            </ul>
+        </div>
+
+        <!-- Document Previews Section -->
+        <h2>Project Files</h2>
         <div class="grid" id="pdf-grid">
             <!-- PDF Cards will be injected here by JavaScript -->
         </div>
 
         <footer>
-            E-Bibliography created for CBSE Social Science Project File • 2026
+            E-Bibliography created for CBSE Social Science Project File • 2026-27
         </footer>
     </div>
 
-    <!-- JavaScript to load PDFs into Mozilla PDF.js iframes -->
+    <!-- JavaScript to load PDFs into Mozilla PDF.js iframes with Cache Busting -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // List of your files from the GitHub folder
             const pdfFiles = [
                 "1.pdf", "2.pdf", "3.pdf", "4.pdf", "5.pdf", "5-backside.pdf", 
                 "6.pdf", "6-backside.pdf", "7.pdf", "8.pdf", "9.pdf", "10.pdf"
             ];
             
-            // Raw GitHub content base URL
             const rawBaseUrl = "https://raw.githubusercontent.com/AryansDevStudios/raw-files/main/SST%20project%202026-27/";
-            
             const pdfGrid = document.getElementById('pdf-grid');
 
             pdfFiles.forEach(fileName => {
-                // Construct the direct link to the raw PDF
-                const directFileUrl = rawBaseUrl + fileName;
+                // Generate a unique timestamp to bust the browser cache
+                const cacheBuster = "?t=" + new Date().getTime();
                 
-                // Encode the URL so Mozilla's PDF.js viewer can read it without throwing a formatting error
+                // Construct the direct link to the raw PDF and attach the cache buster
+                const directFileUrl = rawBaseUrl + fileName + cacheBuster;
+                
+                // Encode the URL so Mozilla's PDF.js viewer can read it 
                 const encodedFileUrl = encodeURIComponent(directFileUrl);
                 const viewerUrl = "https://mozilla.github.io/pdf.js/web/viewer.html?file=" + encodedFileUrl;
 
+                // Create the HTML card for each PDF
                 const cardHTML = `
                     <div class="card pdf-card">
                         <iframe src="${viewerUrl}" title="${fileName}"></iframe>
                         <div class="card-content">
                             <div class="card-title">Page / File: ${fileName}</div>
-                            <a href="${directFileUrl}" target="_blank" class="btn">Download</a>
+                            <a href="${directFileUrl}" target="_blank" class="btn">Download / View Raw</a>
                         </div>
                     </div>
                 `;
                 
-                // Insert into the grid
                 pdfGrid.innerHTML += cardHTML;
             });
         });
